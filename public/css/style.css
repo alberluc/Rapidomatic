@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body, main{
+	height: 100%;
+}
+
+body, input{
+	font-family: 'Exo', sans-serif;
+	font-size: 2vw;
+}
+
+input[type=submit], input[type=submit], button, a{
+	cursor: pointer;
+}
+
+input{
+	display: block;
+}
+input:focus, button:focus{
+	outline: none;
+}
+
+p{
+	font-size: 2.5vw;
+}
+
+.title{
+	margin: 0 auto;
+    font-size: 5.5vw;
+    width: 30vw;
+}
+
+.form-join{
+	display: block;
+	width: 30vw;
+	padding: 1vh 3vw;
+	margin: 5vh auto;
+}
+.form-join input[type=text]{
+	width: 100%;
+	margin-top: 3vh;
+	padding: 1vh .5vw;
+	border: none;
+	border-bottom: solid #9C27B0 1px;
+}
+.form-join input[type=submit]{
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 6vh; 
+	padding: 1vh 2vw;
+	border: none;
+	border: solid #9C27B0 1px;
+	background: white;
+	border-radius: 4vw;
+	transition-duration: 0.2s;
+}
+.form-join input[type=submit]:hover{
+	color: white;
+	background: #9C27B0;
+}
+
+.main-lobby{
+
+}
+.list-lobby{
+	list-style: none;
+	margin-top: 2.5vh;
+	border-left: solid #9C27B0 0.5px;
+	border-right: solid #9C27B0 0.5px;
+	border-top: solid #9C27B0 0.5px;
+}
+.list-lobby li{
+	padding: .5vh 0;
+	text-align: center;
+	font-size: 3vw;
+	/* border-top: solid #9C27B0 0.5px; */
+	border-bottom: solid #9C27B0 0.5px;
+}
+.lobby-decompte {
+    text-align: center;
+    margin: 2vw auto;
+    background-color: #9C27B0;
+    font-size: 2vw;
+    padding: 1vw;
+    border-radius: 50%;
+    width: 5vw;
+    color: #fff;
+}
+
+.ask-dialog{
+
+}
+
+.ask-dialog input{
+	border: none;
+	display: inline;
+	margin: 3vh 1.3vw;
+	padding: 1.2vh 1vw;
+	width: 10vw;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.main-game{
+	height: 100%;
+	width: 100%;
+}
+
+.players{
+	height: 75vh;
+}
+
+.player1{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+.player1-life{
+	float: left;
+	height: 100%;
+	background-color: #F44336;
+	width: 10%;
+}
+
+.player2{
+	float: right;
+	width: 50%;
+	height: 100%;
+	border-right: solid #dedede 1px;
+}
+.player2-life{
+	float: right;
+	height: 100%;
+	background-color: #F44336;
+	width: 10%;
+}
+
+.game-bottom{
+	height: 25vh;
+	background-color: #dedede;
+}
+
+.players-infos{
+	
+padding: 2vh;
+}
+
+.players-name{
+	display: flex;
+	justify-content: space-around;
+}
+
+.player-name{
+
+}
+
+.show-word{
+
+position: relative;
+
+top: -4vh;
+
+width: 100%;
+
+height: 6vh;
+
+border: none;
+
+background: #fff;
+
+text-align: center;
+
+border-radius: .3vw;
+}
+
+.text-word{
+
+height: 6vh;
+
+border: none;
+
+background: #fff;
+
+text-align: center;
+
+border: solid #9E9E9E 1px;
+
+border-radius: .3vw;
+}
+
+.send-word{
+
+height: 6vh;
+}
+.text-word, .send-word{
+	display: inline;
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+}
+
+.flex-vertical{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	align-items: center;
+}
+
+.hidden{
+	display: none;
+}
+
+.violet{
+	color: #9C27B0;
+}

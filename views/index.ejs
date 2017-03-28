@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Rapidomatic</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+		<header class="header">
+			
+		</header>
+
+		<main class="main">
+			<div class="flex-vertical">
+				<div class="main-join">
+					<h1 class="title">R<span class="violet">a</span>pidom<span class="violet">a</span>tic</h1>
+					<form class="form-join">
+						<input type="text" id="user-pseudo" class="user-pseudo" placeholder="Pseudo">
+						<input type="text" id="user-room" class="user-room" placeholder="Nom du salon">
+						<input type="submit" id="user-submit" class="user-submit" value="Go !">
+					</form>
+				</div>
+				<div class="main-lobby hidden">
+					
+				</div>
+				<div class="main-game hidden">
+					<div class="players">
+						<div class="player1">
+							<div class="player1-life"></div>
+						</div>
+						<div class="player2">
+							<div class="player2-life"></div>
+						</div>
+					</div>
+					<div class="game-bottom">
+						<div class="players-infos">
+
+						</div>
+						<div class="flex-center">
+							<form class="form-words">
+								<input type="text" class="show-word" id="show-word" disabled>
+								<input type="text" class="text-word" id="text-word">
+								<input type="button" class="send-word" id="send-word" value="Valider">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="ask-dialog" class="ask-dialog hidden">
+					<p>Ce salon existe déjà, voulez vous y rentrer ?</p>
+					<div class="flex-center">
+						<input type="button" id="ok" value="Oui">
+						<input type="button" id="cancel" value="Annuler">
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/client.js"></script>
+		<script src="js/user.js"></script>
+
+	</body>
+
+</html>
